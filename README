@@ -1,0 +1,22 @@
+# Copyright Andrei Maruntis 313CA
+
+README Tema 2 my_octave
+
+	Am implementat mai multe functii pentru a indeplini cerintele. Acestea apar
+pe rand in fisierul sursa si au comentarii care indica ce rol indeplineste
+fiecare.
+	Pentru alocarea memoriei am folosit exclusiv vectori si matrici alocati
+dinamic, iar programul foloseste minimul posibil de memorie (niciodata nu raman
+spatii libere in memorie).
+	Programul foloseste o structura decizionala switch pentru a alege functia
+care trebuie executata. In cazul in care comanda nu este recunoscuta se
+afiseaza mesajul "Unrecognised command" si utilizatorul poate introduce alta
+comanda. Executia se opreste la citirea lui Q (se elibereaza toata memoria),
+iar celelalte comenzi (L, D, P, etc) sunt explicate in enunt.
+	Alte lucruri care merita mentionate:
+- matricile, liniile si coloanele sunt indexate de la 0
+- matricile noi se adauga automat la indexul cel mai mic posibil
+- programul verifica indecsii sa fie valizi (pozitivi si mai mici decat
+numarul de matrice)
+- exista programare defensiva la unele functii (daca esueaza alocarea de 
+memorie programul termina functia aflata in executie si asteapta alta comanda)
